@@ -8,7 +8,7 @@ data "aws_subnet" "public" {
 }
 
 data "aws_vpc" "vpc" {
-  id = var.vpc_id
+  id = "vpc-004732821255426c0"
 }
 
 data "aws_subnets" "private" {

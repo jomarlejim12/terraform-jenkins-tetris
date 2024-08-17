@@ -173,7 +173,7 @@ module "eks" {
     }
   }
 
-  vpc_id                   = var.vpc_id
+  vpc_id                   = data.aws_vpc.vpc.id
   subnet_ids               = [data.aws_subnet.public.id, data.aws_subnets.private.ids[0], data.aws_subnets.private.ids[1]]
 
   # Fargate profiles use the cluster primary security group so these are not utilized

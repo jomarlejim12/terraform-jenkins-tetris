@@ -16,9 +16,11 @@
 variable "cluster_name" {
   description = "Cluster name"
   type        = string
+  default     = "Test-cluster-082024"
 }
 
-variable "vpc_id" {
-  type        = string
-}
+# variable "vpc_id" {
+#   type        = string
+
+# }
 
